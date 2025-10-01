@@ -4,7 +4,7 @@ import { fn } from "storybook/test";
 import { DayOfLearning } from "./DayOfLearning";
 
 const meta = {
-  title: "Conference/DayOfLearning",
+  title: "Day of Learning/DayOfLearningCard",
   component: DayOfLearning,
   parameters: {
     layout: "centered",
