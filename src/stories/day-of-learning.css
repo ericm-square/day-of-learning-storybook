@@ -1,0 +1,99 @@
+/* Simple Day of Learning Component Styles */
+
+.day-of-learning {
+  max-width: 400px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 2px solid #e5e7eb;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.day-of-learning:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Variants */
+.day-of-learning--primary {
+  border-color: #3b82f6;
+}
+
+.day-of-learning--secondary {
+  border-color: #6b7280;
+}
+
+/* Live state */
+.day-of-learning--live {
+  border-color: #ef4444;
+  background: linear-gradient(135deg, #fef2f2 0%, white 100%);
+}
+
+/* Header */
+.day-of-learning__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.day-of-learning__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #111827;
+}
+
+.day-of-learning__live-badge {
+  background: #ef4444;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+/* Content */
+.day-of-learning__content {
+  color: #374151;
+}
+
+.day-of-learning__topic {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #1f2937;
+}
+
+.day-of-learning__speaker {
+  margin: 0 0 12px 0;
+  color: #6b7280;
+}
+
+.day-of-learning__attendees {
+  background: #f3f4f6;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .day-of-learning {
+    max-width: 100%;
+    padding: 16px;
+  }
+  
+  .day-of-learning__title {
+    font-size: 1.25rem;
+  }
+  
+  .day-of-learning__topic {
+    font-size: 1rem;
+  }
+}
